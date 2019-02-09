@@ -1,0 +1,46 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Shuffle Card</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  </head>
+  <body>
+    <main class="px-3 px-md-5">
+        <div class="container">
+            <div class="py-5 text-center">
+                <h1>Cards App</h1>
+            </div>
+
+            <div class="row my-1 justify-content-between" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+                <div class="col-12 p-0">
+                    <small class="form-text text-muted">How Many Players.</small>
+                </div>
+                <div class="col-9 p-0">
+                    <input type="text" id="players" class="form-control" placeholder="Number of players">
+                    <div class="invalid-feedback">
+                        Value is invalid, Must be 1 or more
+                    </div>
+                </div>
+                <button type="button" id="start" class="btn btn-outline-dark col-2 fade show" style="max-height: 38px;">
+                    <i class="fas fa-play">&nbsp;Start</i>
+                </button>
+
+                <button type="button" id="restart" class="btn btn-outline-dark col-2 fade d-none" style="max-height: 38px;">
+                    <i class="fas fa-redo">&nbsp;Restart</i>
+                </button>
+            </div>
+
+            <div class="row my-4 justify-content-center">
+                <div class="card p-0 justify-content-center">
+                    <ul id="playerList" class="list-group list-group-flush p-0"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./cards.js"></script>
+  </body>
+</html>
